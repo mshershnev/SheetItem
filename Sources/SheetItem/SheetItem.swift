@@ -5,7 +5,7 @@ public struct SheetItem: Identifiable, View {
     public let id = UUID()
     private let content: AnyView
 
-    init(@ViewBuilder _ builder: () -> any View) {
+    public init(@ViewBuilder _ builder: () -> any View) {
         content = AnyView(builder())
     }
 
