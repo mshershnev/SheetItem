@@ -13,3 +13,10 @@ public struct SheetItem: Identifiable, View {
         content
     }
 }
+
+@available(macOS 10.15, *)
+extension View {
+    public func sheet(item: Binding<SheetItem?>) -> some View {
+        sheet(item: item) { $0 }
+    }
+}
