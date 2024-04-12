@@ -10,7 +10,7 @@ struct ContentView: View {
                 Text("SheetView")
             }
         }
-        .sheet(item: $sheet) { $0 }
+        .sheet(item: $sheet)
     }
 }
 ```
